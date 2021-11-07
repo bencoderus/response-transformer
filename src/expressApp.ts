@@ -9,6 +9,7 @@ import {
   notFoundResponse,
   okResponse,
   paymentRequiredResponse,
+  sendResponse,
   serverErrorResponse,
   serviceUnavailableResponse,
   unauthorizedResponse,
@@ -31,6 +32,10 @@ app.get('/created', (request: Request, response: Response) => {
     name: 'John Doe',
     age: 42,
   });
+});
+
+app.get('/send-response', (request: Request, response: Response) => {
+  return sendResponse(response, statusCodes.CONFLICT, 'CONFLICT');
 });
 
 app.get('/bad-request', (request: Request, response: Response) => {

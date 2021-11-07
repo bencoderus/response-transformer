@@ -29,6 +29,14 @@ test('Page would return a 400 response', async () => {
   expect(response.body.message).toBe('BAD_REQUEST');
 });
 
+test('Page would return a 409 response with send response', async () => {
+  const response = await request.get('/send-response');
+
+  expect(response.body.status).toBe(false);
+  expect(response.status).toBe(statusCodes.CONFLICT);
+  expect(response.body.message).toBe('CONFLICT');
+});
+
 test('Page would return a 401 response', async () => {
   const response = await request.get('/unauthorized');
 
