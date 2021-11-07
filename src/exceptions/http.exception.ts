@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export class HttpException extends Error {
   public error: any;
   public statusCode: number;
