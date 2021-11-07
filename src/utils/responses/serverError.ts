@@ -3,5 +3,5 @@ import respond from '../respond';
 import statusCodes from '../statusCodes';
 
 export const serverErrorResponse = (response: Response, message: string, data?: any): Response => {
-  return respond(response, statusCodes.INTERNAL_SERVER_ERROR, message, data);
+  return respond(response, statusCodes.SERVER_ERROR, message, data);
 };
