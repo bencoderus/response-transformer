@@ -4,7 +4,7 @@ export class HttpException extends Error {
   public shouldReport: boolean;
 
   constructor(error: any, statusCode: number) {
-    super();
+    super(error);
 
     this.error = error;
     this.statusCode = statusCode;
