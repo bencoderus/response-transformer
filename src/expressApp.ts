@@ -23,7 +23,7 @@ app.get('/ok', (request: Request, response: Response) => {
   return okResponse(response, 'OK');
 });
 
-app.get('/http-exception', (request: Request, response: Response) => {
+app.get('/http-exception', () => {
   throw new HttpException('Http exception thrown', statusCodes.SERVER_ERROR);
 });
 

@@ -13,4 +13,4 @@ export * from './utils/responses/serviceUnavailable';
 export * from './utils/responses/unauthorized';
 export * from './utils/responses/sendResponse';
 export * from './utils/responses/sendResponse';
-export * from './utils/exceptions/http.exception';
+export * from './exceptions/http.exception';
