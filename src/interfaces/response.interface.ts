@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { Response } from 'express';
 
-export interface ResponseInterface {
+export interface ResponseInterface extends Response {
   status(statusCode: number): this;
-  send(body: any): any;
-  json(body: any): any;
 }
