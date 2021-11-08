@@ -1,4 +1,4 @@
-import { ResponseInterface } from '../../types/response.interface';
+import { ResponseInterface } from '../../interfaces/response.interface';
 import respond from '../respond';
 import statusCodes from '../statusCodes';
 
