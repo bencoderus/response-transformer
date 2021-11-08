@@ -1,7 +1,11 @@
-import { Response } from 'express';
+import { ResponseInterface } from '../../types/response.interface';
 import respond from '../respond';
 import statusCodes from '../statusCodes';
 
-export const serviceUnavailableResponse = (response: Response, message: string, data?: unknown): Response => {
+export const serviceUnavailableResponse = (
+  response: ResponseInterface,
+  message: string,
+  data?: unknown,
+): ResponseInterface => {
   return respond(response, statusCodes.SERVICE_UNAVAILABLE, message, data);
 };
