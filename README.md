@@ -57,30 +57,37 @@ app.get('check', (request, response) => {
 
 Returns
 
-```json
+
 200: /health-check
+```json
 {
-	"status": true,
-	"message": "Everything looks good",
-	"data": {
-		"name": "Benjamin Iduwe",
-		"role": "Software engineer"
-	}
+    "status": true,
+    "message": "Everything looks good",
+    "data": {
+        "name": "Benjamin Iduwe",
+        "role": "Software engineer"
+    }
 }
 
+```
+
 202: /check
+```json
 {
 	"status": true,
 	"message": "Received for processing",
 }
+```
 
 422: /create
+```json
 {
 	"status": false,
 	"message": "Validation error",
 	"error": "Name is required",
 }
 ```
+
 
 #### Using HttpException to throw Http errors
 ```js
@@ -124,7 +131,7 @@ const getName = (name) => {
 4. SailJS
 
 #### Available methods
-
+```jsx
 okResponse(response, message, data);
 
 createdResponse(response, message, data);
@@ -148,7 +155,7 @@ badGatewayResponse(response, message, data);
 serviceUnavailableResponse(response, message, data);
 
 sendResponse(response, statusCode, message, data);
-
+```
 # Test
 ```bash
 npm run test
