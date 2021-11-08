@@ -15,7 +15,7 @@ npm i response-transformer --save
 Installation using yarn
 
 ```bash
-npm i response-transformer --save
+yarn add response-transformer
 ```
 
 # Usage
