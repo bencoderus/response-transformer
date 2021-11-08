@@ -82,9 +82,7 @@ Returns
 }
 ```
 
-<br/>
-
-### Using HttpException to throw Http errors
+#### Using HttpException to throw Http errors
 ```js
 import { HttpException, statusCodes } from 'response-transformer';
 
@@ -95,11 +93,11 @@ const getName = (name) => {
 }
 ```
 
-### HttpException properties 
+#### HttpException properties 
 - Status code: The status code for the exception (error.statusCode).
 - shouldReport: Report only exception for server errors >= 500 (error.shouldReport)
 
-### Supported status codes
+#### Supported status codes
 
 - OK = 200.
 - CREATED = 201.
@@ -118,18 +116,14 @@ const getName = (name) => {
 - SERVICE_UNAVAILABLE = 503.
 - GATEWAY_TIMEOUT = 504.
 
-<br/>
-
-### Supported frameworks
+#### Supported frameworks
 
 1. Express
 2. NestJS
 3. AdonisJS
 4. SailJS
 
-<br/>
-
-### Available methods
+#### Available methods
 
 okResponse(response, message, data);
 
@@ -154,7 +148,6 @@ badGatewayResponse(response, message, data);
 serviceUnavailableResponse(response, message, data);
 
 sendResponse(response, statusCode, message, data);
-<br/>
 
 # Test
 ```bash
