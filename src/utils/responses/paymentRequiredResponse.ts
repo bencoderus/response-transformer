@@ -1,7 +1,11 @@
-import { Response } from 'express';
+import { ResponseInterface } from '../../types/response.interface';
 import respond from '../respond';
 import statusCodes from '../statusCodes';
 
-export const paymentRequiredResponse = (response: Response, message: string, data?: unknown): Response => {
+export const paymentRequiredResponse = (
+  response: ResponseInterface,
+  message: string,
+  data?: unknown,
+): ResponseInterface => {
   return respond(response, statusCodes.PAYMENT_REQUIRED, message, data);
 };
