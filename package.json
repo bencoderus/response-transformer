@@ -1,6 +1,6 @@
 {
   "name": "response-transformer",
-  "version": "1.0.0",
+  "version": "0.5.0",
   "description": "This package helps standardize REST API responses on NodeJS",
   "main": "index.js",
   "scripts": {
